@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Challenge Binar</string>
+    <string-array name="selection_list">Batu,Gunting,Kertas</string-array>
+    <string name="menang">Pemain 1\nMENANG!</string>
+    <string name="kalah">Com\nMENANG!</string>
+</resources>
