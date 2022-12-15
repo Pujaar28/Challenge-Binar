@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VersusPlayerActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imag_title"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_playerone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/comicz"
+        android:text="player"
+        android:textColor="#00b0f0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imag_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_playertwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/comicz"
+        android:text="Pemain 2"
+        android:textColor="#00b0f0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imag_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        android:fontFamily="@font/comicz"
+        android:rotation="-15"
+        android:text="VS"
+        android:textColor="@color/red"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_playerTwoScissor"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toEndOf="@+id/iv_playerOnePaper"
+        app:layout_constraintTop_toBottomOf="@+id/imag_title" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_playerOneRock"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img_batu"
+        app:layout_constraintEnd_toEndOf="@+id/tv_playerone"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="@+id/tv_playerone"
+        app:layout_constraintTop_toBottomOf="@+id/tv_playerone" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_playerOnePaper"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img_kertas"
+        app:layout_constraintEnd_toEndOf="@+id/iv_playerOneRock"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_playerOneRock"
+        app:layout_constraintTop_toBottomOf="@+id/iv_playerOneRock" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_playerOneScissor"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img_gunting"
+        app:layout_constraintEnd_toEndOf="@+id/iv_playerOnePaper"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_playerOnePaper"
+        app:layout_constraintTop_toBottomOf="@+id/iv_playerOnePaper" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_playerTwoRock"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img_batu"
+        app:layout_constraintEnd_toEndOf="@+id/tv_playertwo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_playertwo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_playertwo" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_playerTwoPaper"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img_kertas"
+        app:layout_constraintEnd_toEndOf="@+id/iv_playerTwoScissor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_playerTwoScissor"
+        app:layout_constraintTop_toBottomOf="@+id/iv_playerTwoScissor" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_playerTwoScissor"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img_gunting"
+        app:layout_constraintEnd_toEndOf="@+id/iv_playerTwoRock"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_playerTwoRock"
+        app:layout_constraintTop_toBottomOf="@+id/iv_playerTwoRock" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_reset"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="72dp"
+        android:src="@drawable/ic_refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

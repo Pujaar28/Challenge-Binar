@@ -49,8 +49,8 @@ class GameSelection : AppCompatActivity() {
     }
 
     private fun setOnAction() {
-        val intent = Intent(this@GameSelection, MainActivity::class.java)
-        val intentTwo = Intent(this@GameSelection, MainActivity::class.java)
+        val intent = Intent(this@GameSelection, VersusPlayerActivity::class.java)
+        val intentTwo = Intent(this@GameSelection, VersusComActivity::class.java)
         binding.apply {
             imgVsplayer.setOnClickListener {
                 imgVsplayer.setBackgroundResource(R.drawable.bg_selector)

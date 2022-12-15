@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp"
+        android:background="@drawable/bg_rectangle"
+        android:paddingBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_hasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/comicz"
+            android:text="Hasil Permainan"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_hasiltwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/comicz"
+            android:text="Pemain 1 Menang"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tv_hasil"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="@+id/tv_hasil"
+            app:layout_constraintTop_toBottomOf="@+id/tv_hasil" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_playagain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="#9b6dbb"
+            android:fontFamily="@font/comicz"
+            android:text="Main Lagi"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_hasiltwo"
+            app:layout_constraintStart_toStartOf="@+id/tv_hasiltwo"
+            app:layout_constraintTop_toBottomOf="@+id/tv_hasiltwo" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_backmenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="#ff9900"
+            android:fontFamily="@font/comicz"
+            android:text="Kembali Ke Menu"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_playagain"
+            app:layout_constraintStart_toStartOf="@+id/btn_playagain"
+            app:layout_constraintTop_toBottomOf="@+id/btn_playagain" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

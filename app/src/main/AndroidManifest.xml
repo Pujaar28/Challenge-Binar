@@ -19,6 +19,12 @@
             android:name=".GameSelection"
             android:exported="false" />
         <activity
+            android:name=".VersusComActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VersusPlayerActivity"
+            android:exported="false" />
+        <activity
             android:name=".IntroductionActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustPan" />

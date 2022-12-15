@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".VersusComActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_gametitle"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_plyr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/comicz"
+            android:text="PLAYER"
+            android:textColor="#00b0f0"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_gametitle" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/plyr_rck"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/img_batu"
+            app:layout_constraintEnd_toEndOf="@+id/tv_plyr"
+            app:layout_constraintStart_toStartOf="@+id/tv_plyr"
+            app:layout_constraintTop_toBottomOf="@+id/tv_plyr" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/comp_rck"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/img_batu"
+            app:layout_constraintEnd_toEndOf="@+id/appCompatTextViewFive"
+            app:layout_constraintStart_toStartOf="@+id/appCompatTextViewFive"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextViewFive" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextViewFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="36dp"
+            android:fontFamily="@font/comicz"
+            android:text="COM"
+            android:textColor="#00b0f0"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_gametitle" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/comp_scr"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/img_gunting"
+            app:layout_constraintEnd_toEndOf="@+id/comp_ppr"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/comp_ppr"
+            app:layout_constraintTop_toBottomOf="@+id/comp_ppr" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/plyr_scr"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/img_gunting"
+            app:layout_constraintEnd_toEndOf="@+id/plyr_ppr"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/plyr_ppr"
+            app:layout_constraintTop_toBottomOf="@+id/plyr_ppr" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/plyr_ppr"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/img_kertas"
+            app:layout_constraintEnd_toEndOf="@+id/plyr_rck"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/plyr_rck"
+            app:layout_constraintTop_toBottomOf="@+id/plyr_rck" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_vs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="204dp"
+            android:fontFamily="@font/comicz"
+            android:rotation="-15"
+            android:text="VS"
+            android:textColor="@color/red"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toStartOf="@+id/comp_ppr"
+            app:layout_constraintHorizontal_bias="0.437"
+            app:layout_constraintStart_toEndOf="@+id/plyr_ppr"
+            app:layout_constraintTop_toBottomOf="@+id/iv_gametitle" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/comp_ppr"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/img_kertas"
+            app:layout_constraintEnd_toEndOf="@+id/comp_rck"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/comp_rck"
+            app:layout_constraintTop_toBottomOf="@+id/comp_rck" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_refresh"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="84dp"
+            android:src="@drawable/img_refresh"
+            app:layout_constraintEnd_toEndOf="@+id/comp_scr"
+            app:layout_constraintHorizontal_bias="0.433"
+            app:layout_constraintStart_toStartOf="@+id/comp_scr"
+            app:layout_constraintTop_toBottomOf="@+id/comp_scr" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
