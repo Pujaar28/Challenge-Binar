@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/acty_gameSelect"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameSelection">
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:id="@+id/appCompatCheckedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/comicz"
+        android:text="@string/choose_ur_enemy"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_vsplayer"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img_landing_one"
+        app:layout_constraintEnd_toEndOf="@+id/appCompatCheckedTextView"
+        app:layout_constraintStart_toStartOf="@+id/appCompatCheckedTextView"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatCheckedTextView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_vscom"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/img_landing_two"
+        app:layout_constraintEnd_toEndOf="@+id/tv_vsplayer"
+        app:layout_constraintStart_toStartOf="@+id/tv_vsplayer"
+        app:layout_constraintTop_toBottomOf="@+id/tv_vsplayer">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_vsplayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comicz"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_vsplayer"
+        app:layout_constraintStart_toStartOf="@+id/img_vsplayer"
+        app:layout_constraintTop_toBottomOf="@+id/img_vsplayer"
+        tools:text="@string/vsplayer" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_vscom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/comicz"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_vscom"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/img_vscom"
+        app:layout_constraintTop_toBottomOf="@+id/img_vscom"
+        tools:text="@string/vscom" />
+</androidx.constraintlayout.widget.ConstraintLayout>

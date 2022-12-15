@@ -1,0 +1,55 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentintro.IntroductionThreeFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:src="@drawable/img_landing_three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:id="@+id/tv_writename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/comicz"
+        android:text="@string/write_ur_name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/appCompatImageView3"
+        app:layout_constraintStart_toStartOf="@+id/appCompatImageView3"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView3" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_urname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:imeOptions="actionSend"
+        app:layout_constraintEnd_toEndOf="@+id/tv_writename"
+        app:layout_constraintStart_toStartOf="@+id/tv_writename"
+        app:layout_constraintTop_toBottomOf="@+id/tv_writename"
+        android:singleLine="true"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_nextpage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_urname"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Bootcamp/Challenge Binar/app/src/main/res/drawable/bg_draw.xml" value="0.2165" />
+        <entry key="..\:/Bootcamp/Challenge Binar/app/src/main/res/drawable/bg_selector.xml" value="0.156" />
+        <entry key="..\:/Bootcamp/Challenge Binar/app/src/main/res/drawable/bg_win.xml" value="0.2165" />
+        <entry key="..\:/Bootcamp/Challenge Binar/app/src/main/res/drawable/ic_batu.xml" value="0.175" />
+        <entry key="..\:/Bootcamp/Challenge Binar/app/src/main/res/drawable/ic_kertas.xml" value="0.2075" />
+        <entry key="..\:/Bootcamp/Challenge Binar/app/src/main/res/drawable/ic_landing_page1.xml" value="0.1625" />
+        <entry key="..\:/Bootcamp/Challenge Binar/app/src/main/res/drawable/ic_next.xml" value="0.1" />
+        <entry key="..\:/Bootcamp/Challenge Binar/app/src/main/res/drawable/ic_refresh.xml" value="0.175" />
+        <entry key="..\:/Bootcamp/Challenge Binar/app/src/main/res/layout/activity_game_selection.xml" value="0.22" />
+        <entry key="..\:/Bootcamp/Challenge Binar/app/src/main/res/layout/activity_game_selection2.xml" value="0.1859375" />
+        <entry key="..\:/Bootcamp/Challenge Binar/app/src/main/res/layout/activity_introduction.xml" value="0.14" />
+        <entry key="..\:/Bootcamp/Challenge Binar/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Bootcamp/Challenge Binar/app/src/main/res/layout/activity_splash_screen.xml" value="0.22" />
+        <entry key="..\:/Bootcamp/Challenge Binar/app/src/main/res/layout/fragment_introduction_one.xml" value="0.22" />
+        <entry key="..\:/Bootcamp/Challenge Binar/app/src/main/res/layout/fragment_introduction_one2.xml" value="0.22" />
+        <entry key="..\:/Bootcamp/Challenge Binar/app/src/main/res/layout/fragment_introduction_three.xml" value="0.1" />
+        <entry key="..\:/Bootcamp/Challenge Binar/app/src/main/res/layout/fragment_introduction_two.xml" value="0.16" />
+        <entry key="..\:/Bootcamp/Challenge Binar/app/src/main/res/layout/fragment_introfuction_three_frament.xml" value="0.1046875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

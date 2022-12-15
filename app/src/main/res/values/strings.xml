@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Challenge Binar</string>
+    <string-array name="selection_list">Batu,Gunting,Kertas</string-array>
+    <string name="menang">Pemain 1\nMENANG!</string>
+    <string name="kalah">Com\nMENANG!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="play_with_player">Bermain suit melawan sesama pemain.</string>
+    <string name="play_with_com">Bermain suit melawan komputer.</string>
+    <string name="write_ur_name">Tuliskan namamu dibawah</string>
+    <string name="choose_ur_enemy">PILIH LAWANMU</string>
+    <string name="vsplayer">player vs Player</string>
+    <string name="vscom">Player Vs Com</string>
+</resources>
