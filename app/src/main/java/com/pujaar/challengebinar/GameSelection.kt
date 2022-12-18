@@ -3,9 +3,6 @@ package com.pujaar.challengebinar
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.WindowCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.WindowInsetsControllerCompat
 import com.google.android.material.snackbar.Snackbar
 import com.pujaar.challengebinar.databinding.ActivityGameSelectionBinding
 
@@ -22,17 +19,19 @@ class GameSelection : AppCompatActivity() {
 
     }
 
+    //untuk mengset value yang diterima dari layout sebelumnya
     private fun setView() {
         namePlayer = intent.getStringExtra("name").toString()
         binding.apply {
             tvVsplayer.setText("$namePlayer VS Player")
             tvVscom.setText("$namePlayer VS COM")
         }
-        onSnackBar()
+        onSnackBar() // memanggil snackbar
 
 
     }
 
+    // membuat snack bar
     private fun onSnackBar() {
         binding.apply {
             val snackBar = Snackbar.make(
@@ -44,13 +43,13 @@ class GameSelection : AppCompatActivity() {
                 snackBar.dismiss()
             }
             snackBar.show()
-//            hideNavBar()
         }
     }
 
+    //function ketika gambar diklik
     private fun setOnAction() {
-        val intent = Intent(this@GameSelection, VersusPlayerActivity::class.java)
-        val intentTwo = Intent(this@GameSelection, VersusComActivity::class.java)
+        val intent = Intent(this@GameSelection, VersusPlayerActivity::class.java) //pindah layout ke player vs player
+        val intentTwo = Intent(this@GameSelection, VersusComActivity::class.java) //pindah layout ke player vs com
         binding.apply {
             imgVsplayer.setOnClickListener {
                 imgVsplayer.setBackgroundResource(R.drawable.bg_selector)
@@ -68,16 +67,4 @@ class GameSelection : AppCompatActivity() {
             }
         }
     }
-
-    fun hideNavBar() {
-        binding.apply {
-            WindowCompat.setDecorFitsSystemWindows(window, false)
-            WindowInsetsControllerCompat(window, window.decorView).let { controller ->
-            controller.hide(WindowInsetsCompat.Type.systemBars())
-
-                controller.systemBarsBehavior=WindowInsetsControllerCompat.BEHAVIOR_SHOW_BARS_BY_SWIPE
-        }
-        }
-    }
-
 }

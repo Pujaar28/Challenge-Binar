@@ -36,7 +36,8 @@ lateinit var binding : FragmentIntroductionThreeBinding
     companion object {
         fun newInstance(page:Int)= IntroductionThreeFragment()
     }
-
+//function ketika mengisi edit text
+    // function untuk pidan layout dan membawa value masukan
     private fun setOnClick(){
         binding.apply {
             etUrname.doOnTextChanged { text, start, before, count ->

@@ -16,24 +16,14 @@ class IntroductionActivity : AppCompatActivity() {
 //        setFragment()
         setViewPager()
     }
+    //function untuk membuat viewpager
     private fun setViewPager() {
         binding.apply {
             vpSlider.apply {
                 adapter = IntroAdapter(this@IntroductionActivity)
                 currentItem = 0
-                wormIndicator.setViewPager2(vpSlider)
+                wormIndicator.setViewPager2(vpSlider) //attach worm slider dengan viewpager
                 }
             }
         }
     }
-//    private fun setFragment(){
-//        val fragment = IntroductionOneFragment()
-//        supportFragmentManager.beginTransaction().apply {
-//            replace(R.id.fr_layoutone,fragment)
-//        }.commit()
-//
-//        val fragmenttwo=IntroductionTwoFragment()
-//        supportFragmentManager.beginTransaction().apply {
-//            replace(R.id.fr_layouttwo,fragmenttwo)
-//        }.commit()
-//    }
