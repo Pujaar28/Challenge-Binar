@@ -264,7 +264,7 @@ class VersusPlayerActivity : AppCompatActivity() {
         val dialog = dialogBuilder.create()
         dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         bindingDialog.apply {
-            tvHasiltwo.setText("selamat \n $namePlayer")
+            tvHasiltwo.setText("$namePlayer\nMENANG!")
             tvHasiltwo.textAlignment=View.TEXT_ALIGNMENT_CENTER
             btnPlayagain.setOnClickListener() {
                 resetGame()
