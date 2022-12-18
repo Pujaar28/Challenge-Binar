@@ -21,7 +21,7 @@ class GameSelection : AppCompatActivity() {
         setOnAction()
 
     }
-
+    //function untuk menampilkan tampilan serta menerima value dari activity sebelumnya
     private fun setView() {
         namePlayer = intent.getStringExtra("name").toString()
         binding.apply {
@@ -30,9 +30,9 @@ class GameSelection : AppCompatActivity() {
         }
         onSnackBar()
 
-
     }
 
+    //function untuk menampilkan snakback
     private fun onSnackBar() {
         binding.apply {
             val snackBar = Snackbar.make(
@@ -44,40 +44,28 @@ class GameSelection : AppCompatActivity() {
                 snackBar.dismiss()
             }
             snackBar.show()
-//            hideNavBar()
+
         }
     }
-
+    //function untuk memilih game
     private fun setOnAction() {
-        val intent = Intent(this@GameSelection, MainActivity::class.java)
-        val intentTwo = Intent(this@GameSelection, MainActivity::class.java)
         binding.apply {
-            imgVsplayer.setOnClickListener {
+            imgVsplayer.setOnClickListener { //melawan player
+                val intent = Intent(this@GameSelection, VersusPlayerActivity::class.java) //membuat intent untuk pindah activity
                 imgVsplayer.setBackgroundResource(R.drawable.bg_selector)
                 imgVscom.setBackgroundResource(0)
-                intent.putExtra("name", namePlayer)
+                intent.putExtra("name", namePlayer) //menyimpan nilai dari masukan
                 startActivity(intent)
                 finish()
             }
-            imgVscom.setOnClickListener {
+            imgVscom.setOnClickListener { //melawan computer
+                val intentTwo = Intent(this@GameSelection, VersusComActivity::class.java)
                 imgVsplayer.setBackgroundResource(0)
                 imgVscom.setBackgroundResource(R.drawable.bg_selector)
-                intentTwo.putExtra("name", namePlayer)
+                intentTwo.putExtra("name", namePlayer) //menyimpan nilai
                 startActivity(intentTwo)
                 finish()
             }
         }
     }
-
-    fun hideNavBar() {
-        binding.apply {
-            WindowCompat.setDecorFitsSystemWindows(window, false)
-            WindowInsetsControllerCompat(window, window.decorView).let { controller ->
-            controller.hide(WindowInsetsCompat.Type.systemBars())
-
-                controller.systemBarsBehavior=WindowInsetsControllerCompat.BEHAVIOR_SHOW_BARS_BY_SWIPE
-        }
-        }
-    }
-
 }

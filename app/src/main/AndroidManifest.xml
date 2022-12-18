@@ -2,19 +2,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.pujaar.challengebinar">
-
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/splash_screenone"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/splash_screenone"
         android:supportsRtl="true"
         android:theme="@style/Theme.ChallengeBinar"
         tools:targetApi="31">
+        <activity
+            android:name=".VersusPlayerActivity"
+            android:exported="false" />
         <activity
             android:name=".GameSelection"
             android:exported="false" />
@@ -32,7 +34,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".VersusComActivity"
             android:exported="true" />
 
         <meta-data

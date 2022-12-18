@@ -11,7 +11,7 @@
         android:layout_width="300dp"
         android:layout_height="200dp"
         android:layout_marginTop="112dp"
-        android:src="@drawable/splash_screen1"
+        android:src="@drawable/splash_screenone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,7 +21,7 @@
         android:id="@+id/img_splashtwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/splash_screen2"
+        android:src="@drawable/splash_screentwo"
         app:layout_constraintEnd_toEndOf="@+id/img_splashone"
         app:layout_constraintStart_toStartOf="@+id/img_splashone"
         app:layout_constraintTop_toBottomOf="@+id/img_splashone" />

@@ -11,6 +11,7 @@ import com.pujaar.challengebinar.fragmentintro.IntroductionTwoFragment
 
 class IntroAdapter(fragmentActivity: FragmentActivity):
     FragmentStateAdapter(fragmentActivity){
+    //set fragment
     private val fragments = listOf(
         IntroductionOneFragment.newInstance(FIRST),
         IntroductionTwoFragment.newInstance(SECOND),
