@@ -222,7 +222,7 @@ class VersusComActivity : AppCompatActivity() {
             tvHasiltwo.textAlignment=View.TEXT_ALIGNMENT_CENTER
             btnPlayagain.setOnClickListener() {
                 resetGame()
-                Toast.makeText(this@VersusComActivity, "HELOOOOOOO", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@VersusComActivity, "Main Lagiiiii", Toast.LENGTH_SHORT).show()
                 dialog.dismiss()
             }
             btnBackmenu.setOnClickListener() {
@@ -247,7 +247,7 @@ class VersusComActivity : AppCompatActivity() {
             tvHasiltwo.textAlignment=View.TEXT_ALIGNMENT_CENTER
             btnPlayagain.setOnClickListener() {
                 resetGame()
-                Toast.makeText(this@VersusComActivity, "SERI!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@VersusComActivity, "MAINNN LAGI", Toast.LENGTH_SHORT).show()
                 dialog.dismiss()
             }
             btnBackmenu.setOnClickListener() {
